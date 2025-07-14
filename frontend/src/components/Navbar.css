@@ -1,0 +1,120 @@
+/* ======================= ✅ Navbar.css — Top Fixed, Full Width ======================= */
+
+.navbar {
+  background-color: #0f172a;
+  padding: 12px 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Logo/Heading */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+/* Hamburger Menu Button (mobile only) */
+.menu-toggle {
+  background: none;
+  /* border: none; */
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+  display: none;
+  margin-left: 100px;
+}
+
+.menu-toggle:hover {
+  box-shadow: rgb(128, 12, 12);
+}
+
+/* Right Side (links + button) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #93c5fd;
+}
+
+.navbar-button {
+  background-color: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #1c8fb9;
+}
+
+/* ========== 📱 Mobile View ========== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+    padding-top: 10px;
+  }
+
+  .navbar-right.active {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbar-link,
+  .navbar-button {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+  }
+}

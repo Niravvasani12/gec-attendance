@@ -1,0 +1,44 @@
+.author-badge {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px 10px 16px;
+  background: rgba(18, 1, 35, 0.86);
+  backdrop-filter: blur(6px);
+  border: 1px solid #ffffff1a;
+  border-radius: 12px;
+  margin: 30px auto 0 auto;
+  max-width: 400px;
+  color: var(--font-color-dark);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+
+.author-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 2px solid;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.author-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+  color: var(--primary-hover);
+}

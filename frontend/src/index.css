@@ -1,0 +1,235 @@
+/* :root {
+  --font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-color-dark: rgba(255, 255, 255, 0.87);
+  --font-color-light: #213547;
+  --background-dark: #1a1a1a;
+  --background-light: #ffffff;
+  --primary-color: #646cff;
+  --primary-hover: #535bf2;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0 10px;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(100deg, rgb(0, 0, 0), rgba(155, 84, 84, 0.564));
+  color: var(--font-color-dark);
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+button,
+.omg {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--font-color-dark);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--shadow);
+  margin-top: 1.5rem;
+  max-width: 200px;
+  width: 100%;
+}
+button:hover,
+.omg:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.GEC {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4aqBdYosDco65dJFISUt8o4c9d98eJJJiw&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.gec-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.left-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.right-info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--font-color-dark);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #fff;
+  color: #000;
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.4);
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .top-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .GEC {
+    width: 200px;
+    height: 200px;
+  }
+
+  .gec-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .top-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .left-info,
+  .right-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    margin-top: 20px;
+    padding: 25px 20px;
+  }
+
+  .GEC {
+    width: 90px;
+    height: 90px;
+  }
+
+  .gec-title {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 0.95rem;
+    width: 250px;
+  }
+
+  .gec-title {
+    font-size: 1rem;
+  }
+
+  .GEC {
+    width: 80px;
+    height: 80px;
+  }
+} */
+/* body {
+  margin: 0;
+  padding-top: 70px; 
+  box-sizing: border-box;
+} */

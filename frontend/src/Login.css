@@ -1,0 +1,142 @@
+/* === Login Page Layout Wrapper === */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Left panel: logo + text */
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.gec-logo {
+  width: 140px;
+  height: 140px;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4aqBdYosDco65dJFISUt8o4c9d98eJJJiw&s");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.college-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+  max-width: 300px;
+}
+
+/* Right panel: login form */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.login-form h2 {
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.login-form label {
+  font-weight: 500;
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.login-form input,
+.login-form select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #1e1e1e;
+  color: white;
+  box-sizing: border-box;
+}
+
+.login-form input:focus,
+.login-form select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.4);
+  outline: none;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.login-form button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* 📱 Mobile View: Stack Layout */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .login-left {
+    width: 100%;
+  }
+
+  .college-title {
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+
+  .gec-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .login-form {
+    padding: 25px 20px;
+    max-width: 100%;
+  }
+
+  .login-form input,
+  .login-form select,
+  .login-form button {
+    font-size: 0.95rem;
+  }
+}
