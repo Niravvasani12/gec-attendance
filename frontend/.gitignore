@@ -17,6 +17,7 @@ dist-ssr/
 
 # Environment variables
 .env
+.env.production
 .env.*  # also ignores .env.production, .env.development, etc.
 
 # Editor configs
