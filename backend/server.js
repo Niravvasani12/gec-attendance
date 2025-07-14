@@ -97,6 +97,6 @@ app.listen(PORT, () =>
 
 app.use(
   cors({
-    origin: ["http://localhost:5000", "https://gec-attendance.vercel.app"],
+    origin: ["http://localhost:5000", "https://gec-attendance-12.vercel.app/"],
   })
 );
