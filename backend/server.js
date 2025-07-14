@@ -94,3 +94,9 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
   console.log(`🚀 Server running at http://localhost:${PORT}`)
 );
+
+app.use(
+  cors({
+    origin: ["http://localhost:5000", "https://gec-attendance.vercel.app"],
+  })
+);
