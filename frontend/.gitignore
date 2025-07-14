@@ -13,6 +13,7 @@ node_modules/
 # Build output
 
 dist-ssr/
+dist/
 *.local
 
 # Environment variables
