@@ -27,6 +27,9 @@ const attendanceSchema = new mongoose.Schema({
 });
 const Attendance = mongoose.model("Attendance", attendanceSchema);
 
+app.get("/", (req, res) => {
+  res.send({ activeStatus: true, error: false });
+});
 //  POST: Add attendance
 app.post("/api/attendance", async (req, res) => {
   try {
