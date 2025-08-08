@@ -89,7 +89,7 @@ app.delete("/api/attendance", async (req, res) => {
   }
 });
 
-// ✅ Start server using .env PORT
+//Start server using .env PORT
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () =>
   console.log(`🚀 Server running at http://localhost:${PORT}`)
